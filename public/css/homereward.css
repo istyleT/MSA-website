@@ -1,0 +1,24 @@
+
+  /* Featurettes
+  ------------------------- */
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: normal;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+  }
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    .featurette-heading {
+      font-size: 25px;
+    }
+  }
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  

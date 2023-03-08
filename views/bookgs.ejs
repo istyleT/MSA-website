@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/form-validation.js"></script>
+  <style>
+    .container {
+      max-width: 960px;
+    }
+  </style>
+  <title>นัดหมายศูนย์บริการ</title>
+</head>
+<body class="bg-light">
+  <div class="container">
+    <main class="d-flex flex-column align-items-center">
+      <div class="py-1 text-center">
+        <img class="d-block mx-auto mb-1" src="images/logomg.png" alt="" width="230" height="115">
+      </div>
+        <div class="col-md-7 col-lg-8 ">
+          <hr class="my-3">
+          <form class="needs-validation" novalidate="">
+          <h5 class="mb-3 text-danger fw-bold">รายละเอียดการบริการ</h5>
+            <div class="row gy-3 mb-3">
+              <div class="col-md-6">
+                <label for="carmodel" class="form-label">รุ่นรถ</label>
+                <select class="form-select" id="country" required="">
+                  <option disabled selected>กรุณาเลือกรุ่นรถ</option>
+                  <option value="HO">MG3</option>
+                  <option value="HTR">MG4</option>
+                  <option value="RS">MG5</option>
+                  <option value="HTR">MG ZS</option>
+                  <option value="RS">MG VS HEV</option>
+                  <option value="HTR">MG HS</option>
+                  <option value="RS">MG HS PHEV</option>
+                  <option value="HTR">MG ZS</option>
+                  <option value="RS">MG EP</option>
+                  <option value="HTR">MG EXTENDER</option>
+                </select>
+                <div class="invalid-feedback">
+                  กรุณาเลือกรุ่นรถ
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="carmodel" class="form-label">ทะเบียน</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="กก-9999" required="">
+                <div class="invalid-feedback">
+                  กรุณาระบุหมายเลขทะเบียน
+                </div>
+              </div>
+            </div>
+            
+            <div class="row gy-2 ">
+              <div class="col-md-4">
+                <label for="country" class="form-label">สาขาเข้ารับบริการ</label>
+                <select class="form-select" id="country" required="">
+                  <option disabled selected>กรุณาเลือกสาขา</option>
+                  <option value="HO">ศรีนครินทร์</option>
+                  <option value="HTR">หทัยราษฎร์</option>
+                  <option value="RS">รังสิต(คลอง 4)</option>
+                </select>
+                <div class="invalid-feedback">
+                  กรุณาเลือกสาขาที่ต้องการเข้ารับบริการ
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="state" class="form-label">วันที่เข้ารับบริการ</label>
+                <input type="date" class="form-control" id="address" placeholder="" required="">
+                <div class="invalid-feedback">
+                  กรุณาเลือกวันที่เข้ารับบริการ
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="zip" class="form-label">เวลาเข้ารับบริการ</label>
+                <input type="time" class="form-control" placeholder="" required="">
+              </div>
+            </div>
+            <div class="my-3">
+              <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                <label class="form-check-label" for="credit">เช็คตามระยะ</label>
+              </div>
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="debit">ซ่อมเเซมทั่วไป</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="paypal">เคลมรับประกันคุณภาพ</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="paypal">ตรวจเช็คเดินทางไกล</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="paypal">อื่นๆ</label>
+              </div>
+              <textarea class="w-100 mt-1 border border-secondary-subtle rounded-2" placeholder="รายการอื่นๆ โปรดระบุรายละเอียด"></textarea>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address" checked>
+              <label class="form-check-label" for="same-address">ล้างรถ(ไม่มีค่าใช้จ่าย)</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="save-info" checked>
+              <label class="form-check-label" for="save-info">คืนอะไหล่เก่า</label>
+            </div>
+            <hr class="my-4">
+          <h5 class="mb-3 text-danger fw-bold">ผู้นำรถเข้ารับบริการ</h5>
+          
+            <div class="row g-3">
+              <div class="col-12">
+                <label for="firstName" class="form-label">ชื่อ - นามสกุล</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="username" class="form-label">โทรศัพท์<span class="text-muted"> (เพื่อติดต่อยืนยันการนัดหมาย)</span></label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">Tel</span>
+                  <input type="text" class="form-control" id="username" placeholder="เบอร์ติดต่อ" required="">
+                <div class="invalid-feedback">
+                    Your phone number is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="email" class="form-label">Line ID</label>
+                <input type="email" class="form-control" id="email" placeholder="หรือเพิ่มเพื่อนเราได้ที่ @MSASERVICES">
+                <div class="invalid-feedback">
+                  Please enter a valid ID LINE.
+                </div>
+              </div>
+            </div>
+            <hr class="my-3">
+            <button class="w-100 btn btn-danger btn-lg fw-bold" type="submit">นัดหมาย</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">© Mg Saengaree Auto</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+  </div>  
+</body>
+</html>

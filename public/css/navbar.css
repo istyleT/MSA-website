@@ -1,0 +1,17 @@
+.navbar {
+  background-color: rgb(227, 224, 224);
+  /*background-color: rgba(226, 226, 226, 0.85);*/
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  width: 100%;
+  opacity: 0.95 ;
+  
+}
+.nav-item a {
+  font-weight: normal;
+  transition: 0.5s;
+}
+.nav-item a:hover {
+  text-decoration: underline;
+}
+  

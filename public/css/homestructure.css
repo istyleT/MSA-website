@@ -1,0 +1,14 @@
+html,body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color:black;
+    background-image: url("/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
