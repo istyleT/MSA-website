@@ -4,7 +4,7 @@ const ejs = require('ejs')
 //สร้าง object จาก express
 const app = express() 
 //ตั้งค่าให้รู้จัก static files 
-app.use(express.static('public'))
+app.use(express.static('statics'))
 //ตั้งค่า dafalut template engine
 app.set('view engine', 'ejs')
 //กำหนด path
