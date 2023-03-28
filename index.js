@@ -3,6 +3,8 @@ const express = require('express')
 const ejs = require('ejs')
 //สร้าง object จาก express
 const app = express() 
+// สร้างตัวเเปร port
+let PORT = process.env.PORT || 3000;
 //ตั้งค่าให้รู้จัก static files 
 app.use(express.static('statics'))
 //ตั้งค่า dafalut template engine
@@ -46,4 +48,4 @@ app.use((request,response) =>{
     response.send('404 Not Found')
 })
 //สร้างการเชื่อมต่อที่ port 3000 callback function ทำเมื่อเชื่อมต่อสำเร็จ
-app.listen(3000, ()=> console.log('Server started'));
+app.listen(PORT, ()=> console.log('Server started'));
