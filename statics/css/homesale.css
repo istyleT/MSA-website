@@ -16,11 +16,11 @@
   position: absolute;
   padding: 0vw 2vw 2vw 2vw;
   top: 0;
-  left: 5%;
+  left: 10%;
   bottom: 0;
   right: 0;
-  width: 90%;
-  height: 100%;
+  width: 80%;
+  height: auto;
 }
 /* end iframe respondsive */
 /***Card Flip with Text***/
