@@ -10,8 +10,17 @@
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  /* Then style the iframe to fit in the container div with full height and width */
 }
-/* Then style the iframe to fit in the container div with full height and width */
+/* ซ่อนเนื้อหากรณีหน้าจอเล็ก */
+@media screen and (max-width: 800px) {
+  #myCarousel {
+    display: none;
+  }
+  header {
+    padding-top: 25px;
+  }
+}
 .responsive-iframe {
   position: absolute;
   padding: 0vw 2vw 2vw 2vw;
