@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 42px;
     
 }
 /* css iframe respondsive */
@@ -32,7 +33,7 @@
 }
 #vdo-promotion-sale {
   position: absolute;
-  padding: 0vw 2vw 2vw 2vw;
+  padding: 0vw 1vw 1vw 1vw;
   top: 0;
   left: 10%;
   bottom: 0;
@@ -46,7 +47,7 @@
     display: none;
   }
   header {
-    padding-top: 25px;
+    padding-top: 0px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -118,8 +119,6 @@
 }
 
 
-/* banner*/
-
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
@@ -139,7 +138,12 @@
     font-size: 1.25rem;
     line-height: 1.4;
   }
-
-  
 }
 
+.carousel-control-next, .carousel-control-prev {
+  width: 5%;
+  /*height: 100%;
+  background: none;
+  border: none;
+  z-index: 1;*/
+}
