@@ -54,6 +54,24 @@
     display: none;
   }
 }
+@media screen and (max-width: 991px) {
+  #show-small-button {
+    display: block;
+  }
+  #show-large-button {
+    display: none;
+  }
+}
+  
+@media screen and (min-width: 991px) {
+  #show-small-button {
+    display: none;
+  }
+  #show-large-button {
+    display: block;
+  }
+}
+  
 
 /***Card Flip with Text***/
 .flip-card {
