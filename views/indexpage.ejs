@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/parallax.css">
+    <link rel="stylesheet" href="css/homestructure.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/mapbranch.css">
+    <title>New Home Page</title>
+</head>
+<body onload="myLoader()">
+  <div class="lds-hourglass" id="preLoader"></div>
+  <div id="pageContent" class="page-content fade-content">
+    <%-  include('layouts/navbar')  %>
+    <section class="parallex">
+        <h2 id="textname" class="font-monospace fw-bold px-2 py-1 rounded-2">MG Saengaree Auto</h2>
+        <img id="baner1" src="images/service-center-hathairat-banner.png" alt="banner-left" width="33.33%" height="100%" loading="eager">
+        <img id="baner2" src="images/service-center-srinakarin-banner.png" alt="banner-center" width="33.33%" height="100%" loading="eager">
+        <img id="baner3" src="images/service-center-rangsit.jpg" alt="banner-right" width="33.33%" height="100%" loading="eager">
+    </section>
+    <section class="content sec">
+        <div id="loadingline1" class="bg-danger rounded-pill  mb-3"></div>
+        <div id="sale-box" class="d-flex justify-content-evenly align-items-center gap-5">
+            <div id="saledoor-pic" class=" p-3 ">
+                <img src="images/reward-1.jpeg" alt="image-sale" width="400px" height="250px" class="rounded-3 " loading="eager">
+            </div>
+            <div id="sale-content" class="d-flex flex-column justify-content-center align-items-start gap-2 px-5 ">
+                <h3 >Saengaree Sales</h3>
+                <div id="sale-line"></div>
+                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, et.</p>
+                <a id="sale-button" href="/" class="fw-bold btn btn-danger rounded-pill">ติดต่อฝ่ายขาย</a>
+            </div>
+        </div>
+        <div id="service-box" class="d-flex justify-content-around align-items-center gap-5">
+            <div  id="service-content" class="d-flex flex-column justify-content-center align-items-end gap-2 px-5 float-start">
+                <h3 >Saengaree Service</h3>
+                <div id="service-line"></div>
+                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, et.</p>
+                <a id="service-button" href="/" class="fw-bold btn btn-danger rounded-pill">นัดหมายเข้ารับบริการ</a>
+            </div>
+            <div id="servicedoor-pic" class=" p-3 ">
+                <img src="images/service-1.jpg" alt="image-service" width="400px" height="250px" class="rounded-3 float-end" loading="eager">
+            </div>
+        </div>
+        <div id="body-box" class="d-flex justify-content-between align-items-center gap-5">
+            <div id="bodydoor-pic" class=" p-3 ">
+                <img src="images/service-2.jpg" alt="image-body" width="400px" height="250px" class="rounded-3 float-start" loading="eager">
+            </div>
+            <div  id="body-content" class="d-flex flex-column justify-content-center align-items-start gap-2 px-5 float-end">
+                <h3 >Saengaree Body & Paint</h3>
+                <div id="body-line"></div>
+                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, et.</p>
+                <a id="body-button" href="/" class="fw-bold btn btn-danger rounded-pill">นัดหมายซ่อมสีเเละตัวถัง</a>
+            </div>
+        </div>
+    </section>
+     <!-- MSA branch -->
+     <div id="MSAbranch" class="ablum px-2 py-4 bg-transparent">
+        <div class="container ">
+          <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 gy-3 gx-2 ">
+            <div class="col d-flex justify-content-center" >
+              <div class="card p-3 border-0 " style="width: 300px; border-radius:30px;">
+                <img loading="eager" id="srinakarinpic" src="images/service-center-srinakarin.jpg" class="card-img-top rounded-circle p-1"  height="225" alt="map-HO" role="img">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h6 class="text-center fw-semibold font-monospace fs-5 mb-1 border-secondary border-2 border-bottom pb-1">Srinakarin</h6>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group w-100">
+                      <a  href="tel:027433955" type="button" class="btn btn-md border border-0">
+                        <img class="float-end" src="images/icons8-ringing-phone-96.png" alt="phone-service" loading="lazy" width="40px" height="40px">
+                      </a>
+                      <a target="_blank" type="button" class="btn btn-md border border-0" href="https://www.google.co.th/maps/place/%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%A1%E0%B8%88%E0%B8%B5+%E0%B9%81%E0%B8%AA%E0%B8%87%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%B5+%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C+-+MG+Srinakarin/@13.6804219,100.6436309,17z/data=!3m1!4b1!4m6!3m5!1s0x311d5f41969edcc7:0x8a31b66b520e579f!8m2!3d13.6804219!4d100.6458196!16s%2Fg%2F11t7rbst1m?hl=th">
+                        <img class="float-start" src="images/icons8-map-64.png" alt="googlemap" loading="lazy" width="40px" height="40px">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center" >
+              <div class="card p-3 border-0" style="width: 300px; border-radius:30px;">
+                <img loading="eager" id="hathairatpic" src="images/service-center-hathairat.jpg" class="card-img-top rounded-circle p-1" width="100%" height="225" alt="map-HTR" role="img">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h6 class="text-center fw-semibold font-monospace fs-5 mb-1 border-secondary border-2 border-bottom pb-1">Hathairat</h6>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group w-100">
+                      <a  href="tel:029069555" type="button" class="btn btn-md border border-0">
+                        <img class="float-end" src="images/icons8-ringing-phone-96.png" alt="phone-service" loading="lazy" width="40px" height="40px">
+                      </a>
+                      <a target="_blank" type="button" class="btn btn-md border border-0" href="https://www.google.co.th/maps/place/%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%A1%E0%B8%88%E0%B8%B5+%E0%B9%81%E0%B8%AA%E0%B8%87%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%B5+%E0%B8%AB%E0%B8%97%E0%B8%B1%E0%B8%A2%E0%B8%A3%E0%B8%B2%E0%B8%A9%E0%B8%8E%E0%B8%A3%E0%B9%8C+-+MG+HATHAIRAT/@13.8685081,100.7200109,17z/data=!3m1!4b1!4m6!3m5!1s0x311d7b11fa7a2981:0x2f75b068c6f3d0fd!8m2!3d13.8685081!4d100.7221996!16s%2Fg%2F11qnbmg2nh?hl=th">
+                        <img class="float-start" src="images/icons8-map-64.png" alt="googlemap" loading="lazy" width="40px" height="40px">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center" >
+              <div class="card p-3 border-0" style="width: 300px; border-radius:30px;">
+                <img loading="eager" id="rangsitpic" src="images/service-center-rangsit.jpg" class="card-img-top rounded-circle p-1" width="100%" height="225" alt="map-RS" role="img">  
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h6 class="text-center fw-semibold font-monospace fs-5 mb-1 border-secondary border-2 border-bottom pb-1">Rangsit(Khlong 4)</h6>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group w-100">
+                      <a  href="tel:025772299" type="button" class="btn btn-md border border-0">
+                        <img class="float-end" src="images/icons8-ringing-phone-96.png" alt="phone-service" loading="lazy" width="40px" height="40px">
+                      </a>
+                      <a target="_blank" type="button" class="btn btn-md border border-0" href="https://www.google.co.th/maps/place/%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%A1%E0%B8%88%E0%B8%B5+%E0%B9%81%E0%B8%AA%E0%B8%87%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%B5+%E0%B8%A3%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B4%E0%B8%95+%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87+4+-+MG+Rangsit+Khlong+4/@14.0030621,100.6909241,17z/data=!3m1!4b1!4m6!3m5!1s0x311d7f97fbed518d:0x8398bd2b62adf9d9!8m2!3d14.0030621!4d100.6931128!16s%2Fg%2F11n004z2z1?hl=th">
+                        <img class="float-start" src="images/icons8-map-64.png" alt="googlemap" loading="lazy" width="40px" height="40px">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--  end MSA branch -->
+    <%-  include('layouts/footer')  %>
+  </div>
+  <script src="js/parallax.js"></script>
+  <script src="js/loader.js"></script>
+</body>
+</html>

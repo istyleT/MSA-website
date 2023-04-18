@@ -1,14 +1,17 @@
-html,body {
+#pageContent {
     scroll-behavior: smooth;
     overflow-x: hidden;
     width: 100%;
     font: 400 15px/1.8 "Lato", sans-serif;
     color:black;
-    background-image: url("/images/wallpaper-msawebsite.jpg");
+    background-image: url("/images/service-center-hathairat.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
+html body {
+    background-color: whitesmoke;
+}
 
 

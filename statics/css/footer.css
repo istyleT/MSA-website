@@ -1,0 +1,19 @@
+.container-footer {
+    background-color: aliceblue;
+}
+#underlinetopicfooter-sale {
+    height: 2px;
+    width: 40%;
+}
+#underlinetopicfooter-service {
+    height: 2px;
+    width: 40%;
+}
+#underlinetopicfooter-aboutus {
+    height: 2px;
+    width: 40%;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}

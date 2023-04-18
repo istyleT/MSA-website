@@ -1,0 +1,54 @@
+.parallex {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+}
+#textname {
+    background-color: white;
+    position: absolute;
+    font-size: 5em;
+    color: rgb(228, 59, 59);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+.parallex img {
+    pointer-events: none;
+    z-index: 2;
+}
+#loadingline1 {
+    height: 5px;
+    max-width: 90%;
+    margin-left: 5%;
+}
+#sale-box, #service-box, #body-box {
+    width: 100vw;
+    /* max-height: 50vh;*/
+} 
+#saledoor-pic, #servicedoor-pic, #bodydoor-pic {
+    width: 30%;
+    position: relative;
+}
+
+#sale-line, #service-line, #body-line{
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: silver;
+    border-radius: 25px;
+}
+#sale-content, #service-content, #body-content{
+    position: relative;
+}
+#sale-button, #service-button, #body-button{
+    position: relative;
+    width: 80%;
+}
+.sec{
+    width: 100%;
+    background-color: aliceblue;
+    position: relative;
+    z-index: 4;
+}

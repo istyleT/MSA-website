@@ -1,0 +1,22 @@
+#srinakarinpic, #hathairatpic, #rangsitpic {
+    outline-color: rgb(243, 99, 99);
+    outline-style: solid;
+    outline-width: 4px;
+    outline-offset: 3px;
+}
+#MSAbranch {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.card {
+    transition: 0.3s;
+}
+.card:hover {
+    transform: scale(1.06);
+}
+.btn-group img {
+    transition: 0.3s;
+}
+.btn-group img:hover {
+    transform: scale(1.15);
+}

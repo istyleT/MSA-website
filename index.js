@@ -14,6 +14,9 @@ app.use('/bootstrap',
     express.static(__dirname + '/node_modules/bootstrap/dist'))
 
 app.get('/',(request,response) => { 
+    response.render('indexpage')
+})
+app.get('/page',(request,response) => { 
     response.render('index')
 })
 app.get('/bookgs',(request,response) => {

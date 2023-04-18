@@ -1,17 +1,28 @@
 .navbar {
-  background-color: rgb(227, 224, 224);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
-  width: 100%;
-  opacity: 0.95;
+  opacity: 0.98; 
+  height: 8vh;
+  z-index: 999;
+}
+.navbar-menu-box a {
+  color: black;
+  letter-spacing: 0.5px;
+  padding: 5px 15px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 35px;
+  height: 100%;
+}
+.navbar-menu-box a:hover, .navbar-menu-box a:active {
+  background-color: #e65959;
+  color: #fff;
+}
+/* navbar sticky */
+.content {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.nav-link {
-  font-weight: normal;
-  transition: 0.3s;
-}
-.nav-link:hover {
-  font-size: 110%;
-  font-weight: bold;
-}
-  
+
