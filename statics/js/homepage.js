@@ -1,3 +1,0 @@
-/******test******/
-console.log("pass");
-

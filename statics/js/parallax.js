@@ -15,7 +15,6 @@ let bodypic = document.getElementById('bodydoor-pic');
 let bodycontent = document.getElementById('body-content');
 window.addEventListener("scroll", ()=>{
     let value = window.scrollY;
-    console.log(value);
     // header
     textname.style.marginTop = value * 1.0 + 'px';
     baner1.style.marginRight = value * 0.5 + 'px';

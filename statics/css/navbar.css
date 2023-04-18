@@ -1,9 +1,17 @@
 .navbar {
+  background-color:  var(--main-color-wallpaper);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   opacity: 0.98; 
   height: 8vh;
   z-index: 999;
+
+}
+.link-first-page  {
+  transition: 0.3s;
+}
+.link-first-page:hover  {
+  transform: scale(1.25);
 }
 .navbar-menu-box a {
   color: black;

@@ -48,7 +48,7 @@
 }
 .sec{
     width: 100%;
-    background-color: aliceblue;
+    background-color: var(--main-color-wallpaper);
     position: relative;
     z-index: 4;
 }

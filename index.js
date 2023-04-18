@@ -16,30 +16,34 @@ app.use('/bootstrap',
 app.get('/',(request,response) => { 
     response.render('indexpage')
 })
-app.get('/page',(request,response) => { 
-    response.render('index')
-})
-app.get('/bookgs',(request,response) => {
-    response.render('bookgs')
-})
-app.get('/bookbp',(request,response) => {
-    response.render('bookbp')
-})
-app.get('/joinus',(request,response) => {
-    response.render('joinus')
-})
-app.get('/msanews',(request,response) => {
-    response.render('msanews')
-})
-app.get('/msaactivity',(request,response) => {
-    response.render('msaactivity')
+app.get('/salepage',(request,response) => { 
+    response.render('salepage')
 })
 app.get('/bookdrive',(request,response) => {
     response.render('bookdrive')
 })
-app.get('/login',(request,response) => {
-    response.render('login')
+app.get('/servicepage',(request,response) => {
+    response.render('servicepage')
 })
+app.get('/bookgs',(request,response) => {
+    response.render('bookgs')
+})
+app.get('/bodypage',(request,response) => {
+    response.render('bodypage')
+})
+app.get('/bookbp',(request,response) => {
+    response.render('bookbp')
+})
+app.get('/marketingpage',(request,response) => {
+    response.render('marketingpage')
+})
+app.get('/aboutuspage',(request,response) => {
+    response.render('aboutuspage')
+})
+app.get('/joinus',(request,response) => {
+    response.render('joinus')
+})
+
 function render(response, file){
     response.status(200)
     response.type('text/html')

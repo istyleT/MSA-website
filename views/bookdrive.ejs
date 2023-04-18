@@ -6,16 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <script src="/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/structure.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <script src="js/loader.js" defer></script>
+  <link rel = "icon" href = "images/logonavbar.jpg" type = "image/x-icon" >
   <script src="js/form-validation.js"></script>
   <style>
     .container {
       max-width: 960px;
     }
   </style>
-  <title>book drive</title>
+  <title>จองคิวทดลองขับ</title>
 </head>
-<body class="bg-light">
-  <div class="container">
+<body onload="myLoader()">
+  <%- include('layouts/loader')  %>
+  <div id="pageContent" class="page-content fade-content">
+    <%-  include('layouts/navbar')  %>
+  <div class="container bg-white">
     <main class="d-flex flex-column align-items-center">
       <div class="py-1 text-center">
         <img class="d-block mx-auto mb-1" src="images/logomg.png" alt="" width="230" height="115">
@@ -137,14 +146,7 @@
         </div>
       </div>
     </main>
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-      <p class="mb-1">© Mg Saengaree Auto</p>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="#">Privacy</a></li>
-        <li class="list-inline-item"><a href="#">Terms</a></li>
-        <li class="list-inline-item"><a href="#">Support</a></li>
-      </ul>
-    </footer>
+    <%-  include('layouts/footer')  %>
   </div>  
 </body>
 </html>
