@@ -43,8 +43,13 @@
     position: relative;
 }
 #sale-button, #service-button, #body-button{
-    position: relative;
-    width: 80%;
+    border: 2px solid var(--main-color-button);
+    width: 70%;
+}
+#sale-button:is(:hover, :focus), #service-button:is(:hover, :focus), #body-button:is(:hover, :focus){
+    background-color:var(--main-color-button) ;
+    outline-offset: 2px;
+    outline: 2px solid var(--main-color-button);
 }
 .sec{
     width: 100%;
@@ -52,3 +57,4 @@
     position: relative;
     z-index: 4;
 }
+

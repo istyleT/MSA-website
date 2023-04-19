@@ -13,18 +13,14 @@
   <script src="js/loader.js" defer></script>
   <link rel = "icon" href = "images/logonavbar.jpg" type = "image/x-icon" >
   <script src="js/form-validation.js"></script>
-  <style>
-    .container {
-      max-width: 960px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/form.css">
   <title>จองคิวทดลองขับ</title>
 </head>
 <body onload="myLoader()">
   <%- include('layouts/loader')  %>
   <div id="pageContent" class="page-content fade-content">
     <%-  include('layouts/navbar')  %>
-  <div class="container bg-white">
+  <div class="container">
     <main class="d-flex flex-column align-items-center">
       <div class="py-1 text-center">
         <img class="d-block mx-auto mb-1" src="images/logomg.png" alt="" width="230" height="115">
@@ -141,7 +137,7 @@
               </div>
             </div>
             <hr class="my-3">
-            <button class="w-100 btn btn-secondary btn-lg fw-bold text-white" type="submit">นัดหมาย</button>
+            <button class="w-100 btn btn-danger btn-lg fw-bold text-white" type="submit">นัดหมาย</button>
           </form>
         </div>
       </div>

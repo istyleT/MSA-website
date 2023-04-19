@@ -21,8 +21,8 @@
   border-radius: 35px;
   height: 100%;
 }
-.navbar-menu-box a:hover, .navbar-menu-box a:active {
-  background-color: #e65959;
+.navbar-menu-box a:is(:hover, :focus) {
+  background-color: #e64444;
   color: #fff;
 }
 /* navbar sticky */

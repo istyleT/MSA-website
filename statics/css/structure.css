@@ -1,5 +1,7 @@
 :root {
-    --main-color-wallpaper : whitesmoke; 
+    --main-color-wallpaper : Snow; 
+    --main-color-button : Crimson;
+    --main-color-form : White;
 }
 html body {
     background-color: whitesmoke;
