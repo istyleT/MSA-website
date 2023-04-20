@@ -17,6 +17,8 @@
 .parallex img {
     pointer-events: none;
     z-index: 2;
+    object-fit: cover;
+    object-position: center;
 }
 #loadingline1 {
     height: 5px;
