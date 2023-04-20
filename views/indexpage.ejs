@@ -16,6 +16,7 @@
     <script src="js/parallax.js" defer></script>
     <script src="js/popuptelnumber.js"></script>
     <link rel="stylesheet" href="css/mapbranch.css">
+    <link rel="stylesheet" href="css/respondsive.css">
     <title>MSA Home Page</title>
 </head>
 <body onload="myLoader()">
@@ -30,9 +31,9 @@
     </section>
     <section class="content sec">
         <div id="loadingline1" class="bg-danger rounded-pill  mb-3"></div>
-        <div id="sale-box" class="d-flex justify-content-evenly align-items-center gap-5">
+        <div id="sale-box" class="d-flex justify-content-around align-items-center">
             <div id="saledoor-pic" class=" p-3 ">
-                <img src="images/reward-1.jpeg" alt="image-sale" width="400px" height="250px" class="rounded-3 " loading="eager">
+                <img src="images/reward-1.jpeg" alt="image-sale" width="350px" height="250px" class="rounded-3 " loading="eager">
             </div>
             <div id="sale-content" class="d-flex flex-column justify-content-center align-items-start gap-2 px-5 ">
                 <h3 >Saengaree Sales</h3>
@@ -41,7 +42,7 @@
                 <a id="sale-button" href="/bookdrive" target="_blank" class="fw-bold btn btn-danger rounded-pill">จองคิวทดลองขับ</a>
             </div>
         </div>
-        <div id="service-box" class="d-flex justify-content-around align-items-center gap-5">
+        <div id="service-box" class="d-flex justify-content-around align-items-center">
             <div  id="service-content" class="d-flex flex-column justify-content-center align-items-end gap-2 px-5 float-start">
                 <h3 >Saengaree Service</h3>
                 <div id="service-line"></div>
@@ -49,12 +50,12 @@
                 <a id="service-button" href="/bookgs" target="_blank" class="fw-bold btn btn-danger rounded-pill">นัดหมายเข้ารับบริการ</a>
             </div>
             <div id="servicedoor-pic" class=" p-3 ">
-                <img src="images/service-1.jpg" alt="image-service" width="400px" height="250px" class="rounded-3 float-end" loading="eager">
+                <img src="images/service-1.jpg" alt="image-service" width="350px" height="250px" class="rounded-3 float-end" loading="eager">
             </div>
         </div>
-        <div id="body-box" class="d-flex justify-content-between align-items-center gap-5">
+        <div id="body-box" class="d-flex justify-content-around align-items-center">
             <div id="bodydoor-pic" class=" p-3 ">
-                <img src="images/service-2.jpg" alt="image-body" width="400px" height="250px" class="rounded-3 float-start" loading="eager">
+                <img src="images/service-2.jpg" alt="image-body" width="350px" height="250px" class="rounded-3 float-start" loading="eager">
             </div>
             <div  id="body-content" class="d-flex flex-column justify-content-center align-items-start gap-2 px-5 float-end">
                 <h3 >Saengaree Body & Paint</h3>
@@ -128,7 +129,5 @@
     <!--  end MSA branch -->
     <%-  include('layouts/footer')  %>
   </div>
-  
-
 </body>
 </html>

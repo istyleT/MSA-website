@@ -1,0 +1,17 @@
+@media  only screen and (max-width: 750px) {
+    #pageContent {
+        padding-top: 8vh;
+    }
+    #loadingline1 {
+        display: none;
+    }
+    .parallex {
+        display: none;
+    }
+    #sale-box, #body-box {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+                    

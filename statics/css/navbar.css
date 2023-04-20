@@ -25,12 +25,20 @@
   background-color: #e64444;
   color: #fff;
 }
-/* navbar sticky */
 .content {
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 10px;
   padding-right: 10px;
 }
+.navbar-toggler{
+  transition: 0.3s;
+  border-radius: 20px;
+}
+.navbar-toggler:focus {
+  border : 3px solid var(--main-color-button);
+  box-shadow: none;
+}
+
 
 
